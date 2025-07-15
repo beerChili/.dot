@@ -1,0 +1,73 @@
+shell-integration-features = cursor,sudo,title
+window-save-state = always
+
+keybind = clear
+keybind = cmd+q=quit
+keybind = cmd+a=select_all
+keybind = cmd+c=copy_to_clipboard
+keybind = cmd+v=paste_from_clipboard
+
+keybind = ctrl+w>s=new_split:down
+keybind = ctrl+w>v=new_split:right
+keybind = ctrl+w>c=close_surface
+keybind = ctrl+w>right_bracket=resize_split:right,64
+keybind = ctrl+w>left_bracket=resize_split:left,64
+keybind = ctrl+w>right_bracket=resize_split:up,64
+keybind = ctrl+w>left_bracket=resize_split:down,64
+keybind = ctrl+w>f=toggle_split_zoom
+keybind = ctrl+w>h=goto_split:left
+keybind = ctrl+w>j=goto_split:bottom
+keybind = ctrl+w>k=goto_split:top
+keybind = ctrl+w>l=goto_split:right
+
+keybind = ctrl+b>c=new_tab
+keybind = ctrl+b>x=close_tab
+keybind = ctrl+b>n=next_tab
+keybind = ctrl+b>p=previous_tab
+keybind = ctrl+b>one=goto_tab:1
+keybind = ctrl+b>two=goto_tab:2
+keybind = ctrl+b>three=goto_tab:3
+keybind = ctrl+b>four=goto_tab:4
+keybind = ctrl+b>five=goto_tab:5
+keybind = ctrl+b>six=goto_tab:6
+keybind = ctrl+b>seven=goto_tab:7
+keybind = ctrl+b>eight=goto_tab:8
+keybind = ctrl+b>nine=goto_tab:9
+keybind = ctrl+b>zero=last_tab
+
+keybind = super+f=write_scrollback_file:open
+
+cursor-style = underline
+cursor-style-blink = true
+adjust-cursor-thickness = 2
+adjust-underline-position = 1
+adjust-underline-thickness = 2
+shell-integration-features = no-cursor
+mouse-hide-while-typing = true
+
+font-family = "MartianMono Nerd Font Mono"
+font-size = 16
+font-feature = -calt,-liga,-dlig
+
+background = #181c22
+foreground = #9da5b4
+selection-background = #3a3f4b
+selection-foreground = #ffffff
+cursor-color = #abb2bf
+
+palette = 0=#181c22
+palette = 1=#e06c75
+palette = 2=#8fbf70
+palette = 3=#dcb074
+palette = 4=#4fa4e3
+palette = 5=#bb70d2
+palette = 6=#4fb9bd
+palette = 7=#9da5b4
+palette = 8=#4b515c
+palette = 9=#e06c75
+palette = 10=#8fbf70
+palette = 11=#dcb074
+palette = 12=#4fa4e3
+palette = 13=#bb70d2
+palette = 14=#4fb9bd
+palette = 15=#dfe2e7
