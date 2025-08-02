@@ -5,7 +5,6 @@ set number relativenumber
 
 set scrolloff=10 " Keeps cursor at least 10 lines from edge of screen
 set nowrap       " Disable line wrapping
-set showmatch    " Highlight matching parentheses
 
 " Enable auto-indentation and set tab behavior to spaces
 set autoindent    " Automatically indent new lines

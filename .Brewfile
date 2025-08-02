@@ -1,6 +1,8 @@
+brew "fzf"
 brew "git"
 brew "neovim"
-brew "ripgrep"
+brew "zig"
+brew "zls"
 brew "zsh"
 cask "1password", args: { appdir: "/Applications" }
 cask "font-martian-mono-nerd-font"
