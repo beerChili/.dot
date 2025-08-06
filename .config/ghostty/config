@@ -10,7 +10,7 @@ keybind = cmd+shift+comma=reload_config
 
 keybind = ctrl+a>ctrl+a=text:\x01
 keybind = ctrl+a>shift+5=new_split:down
-keybind = ctrl+a>shift+2=new_split:right
+keybind = ctrl+a>shift+'=new_split:right
 keybind = ctrl+a>x=close_surface
 keybind = ctrl+a>left_bracket=resize_split:left,64
 keybind = ctrl+a>right_bracket=resize_split:right,64
