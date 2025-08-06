@@ -53,10 +53,6 @@ defaults write com.apple.dock mru-spaces -bool false
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock show-recents -bool false
 
-# Mail
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
-defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
-
 # Spotlight
 defaults write com.apple.spotlight orderedItems -array \
   '{"enabled"=1;"name"="APPLICATIONS";}' \
@@ -76,9 +72,9 @@ defaults write com.apple.spotlight orderedItems -array \
   '{"enabled"=0;"name"="SPREADSHEETS";}' \
   '{"enabled"=0;"name"="SOURCE";}' \
   '{"enabled"=0;"name"="MENU_SPOTLIGHT_SUGGESTIONS";}'
-killall mds >/dev/null 2>&1
-sudo mdutil -i on / >/dev/null 2>&1
+sudo mdutil -i off / >/dev/null 2>&1
 sudo mdutil -E / >/dev/null 2>&1
+sudo mdutil -i on / >/dev/null 2>&1
 
 # TextEdit
 defaults write com.apple.TextEdit RichText -int 0
@@ -86,10 +82,5 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
 # Photos
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-
-# Restart affected apps
-for app in cfprefsd Dock Finder Mail SystemUIServer; do
-  killall "$app" >/dev/null 2&>1
-done
 
 echo "Done. Some changes require logout/restart."
