@@ -2,7 +2,14 @@ export LANG=en_US.UTF-8
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=nvim
 
-if BREW_PATH="$(command -v brew)"; [ -x "$BREW_PATH" ]; then
+local BREW_PATH
+if [ -x "/opt/homebrew/bin/brew" ]; then
+    BREW_PATH="/opt/homebrew/bin/brew"
+elif [ -x "/usr/local/bin/brew" ]; then
+    BREW_PATH="/usr/local/bin/brew"
+fi
+
+if [ -n "$BREW_PATH" ]; then
   eval "$("$BREW_PATH" shellenv)"
 
   export HOMEBREW_CASK_OPTS="--appdir=~/Applications --fontdir=/Library/Fonts"
