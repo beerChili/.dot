@@ -10,7 +10,7 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.controlcenter "BatteryShowPercentage" -bool true
 
 # Typing & input
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
